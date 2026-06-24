@@ -3,7 +3,7 @@
 This repository contains a comprehensive technical code review of an automated E2E testing framework built with [Cypress](https://www.cypress.io/) and Allure reports.
 
 ## 📄 The Report
-The core output of this review is compiled into a detailed PDF document. 
+The core output of this review is compiled into a detailed PDF document.
 👉 **[Download / View the Code Review Report PDF](./CypressAllure_Review_by_Ernest_Sosnovskyi.pdf)**
 
 ## 🎯 Review Scope & Objectives
