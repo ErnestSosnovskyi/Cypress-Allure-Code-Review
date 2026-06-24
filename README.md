@@ -4,6 +4,7 @@ This repository contains a comprehensive technical code review of an automated E
 
 ## 📄 The Report
 The core output of this review is compiled into a detailed PDF document.
+
 👉 **[Download / View the Code Review Report PDF](./CypressAllure_Review_by_Ernest_Sosnovskyi.pdf)**
 
 ## 🎯 Review Scope & Objectives
