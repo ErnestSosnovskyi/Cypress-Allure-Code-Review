@@ -19,10 +19,11 @@ The analysis evaluates the target repository against industry-standard software 
 * **Version Control:** Repository hygiene, `.gitignore` rules, and commit message standards.
 
 ## 🛠️ Key Findings Summary
-* **Security:** Identified critical vulnerabilities regarding unmasked passwords and hardcoded credentials in JSON fixtures.
-* **Infrastructure:** Highlighted the use of deprecated Node.js versions (v14) and outdated GitHub Actions, proposing migration to modern LTS environments.
-* **Cypress Best Practices:** Addressed anti-patterns such as missing pre-action assertions, mixed TS/JS environments, cross-origin test navigations, and improper context bindings (arrow functions in Mocha).
-* **Repository Hygiene:** Recommended the removal of auto-generated artifacts (Allure HTML/CSS) from the `master` branch in favor of isolated `gh-pages` deployments.
+* **Startup & CI Blockers:** Identified missing critical dependencies (`ts-node`) and hanging web server commands (`allure open`) that permanently block cloud CI/CD pipeline execution.
+* **TypeScript & Runtime Failures:** Detected strict TypeScript compilation errors and Mocha context binding crashes caused by the improper use of ES6 arrow functions in setup hooks (`beforeEach`).
+* **POM Architectural Flaws:** Highlighted severe Page Object Model anti-patterns, including tight coupling between layout navigation and page logic, out-of-bounds assertions, and concatenated text assertion failures.
+* **CI/CD Configuration:** Addressed inefficient GitHub Actions workflows, missing Pull Request triggers, Docker container mismatches, and the absence of Cypress binary caching.
+* **Security:** Flagged unmasked passwords in the Cypress Command Log and hardcoded sensitive credentials in JSON fixtures.
 
 ---
 *Prepared by Ernest Sosnovskyi*
